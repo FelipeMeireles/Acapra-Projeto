@@ -1,4 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    --cor-principal: rgb #555086 ;
+}
+
+
+/* Campo Estatisticas */
+.estatisticas {
+    color: var(--cor-principal);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
 }
