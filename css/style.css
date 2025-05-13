@@ -125,15 +125,37 @@ a{
 
 /* Campo Estatisticas */
 .estatisticas {
+    text-align: center;
     color: #555086;
+    padding: 12px 12px 20px 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
     background-color: white
 }
 
 .corpo {
+    text-align: center;
     background-color: rgb(183, 193, 248);
     color: #555086;
-    
 } 
+
+/* Campo Histórias */
+.historia {
+    text-align: center;
+    color: #555086;
+    background-color: rgb(183, 193, 248);
+}
+
+.adocoes {
+    text-align: center;
+    color: #555086;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white
+    
+}
+
+.adocoes2 img {
+    width: 100px;
+}
 
