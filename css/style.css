@@ -4,7 +4,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 
-
  body{
     background-color: #D7D8DB;
  }
@@ -50,7 +49,7 @@ a{
     padding: 5px;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 15%;
     left: 15%;
     font-size: 1.3em;
@@ -64,15 +63,29 @@ a{
     padding: 5px;
     text-align: center;
     position: absolute;
-    top: 55%;
+    top: 45%;
     right: 15%;
     left: 15%;
     font-size: 1.3em;
 }
 
 .doacoes3 {
-    background-color: rgb(221, 221, 221);
+    background-color: white;
     color: #555086;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    left: 15%;
+    font-size: 1.3em;
+}
+
+.doacoes4 {
+    background-color: #555086;
+    color: rgb(221, 221, 221);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     padding: 5px;
@@ -84,31 +97,19 @@ a{
     font-size: 1.3em;
 }
 
-.doacoes4 {
-    background-color: white;
+.doacoes-botao {
+    background-color: #666293;
     color: rgb(221, 221, 221);
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
     text-align: center;
     position: absolute;
+    left: 45%;
+    right: 45%;
     top: 80%;
-    right: 15%;
-    left: 15%;
     font-size: 1.3em;
-}
-
-.doacoes-botao {
-    background-color: #555086;
-    color: rgb(221, 221, 221);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: relative;
-    left: 43.25%;
-    
-    font-size: 1.3em;
+    text-decoration: none;
 }
 
 .doacoes-titulo {
@@ -116,7 +117,7 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 15%;
     right: 40%;
     left: 40%;
     font-size: 4em;
@@ -136,4 +137,3 @@ a{
     color: #555086;
     
 } 
-
