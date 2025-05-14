@@ -130,12 +130,37 @@ a{
     padding: 12px 12px 20px 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
-    background-color: white
+    background-color: white;
+    transform: scale(0.9); /* Diminui visualmente sem mudar o texto no CSS */
+    transform-origin: top center; /* Opcional: ponto de origem da escala */
 }
 
+.historia {
+    color: #555086;
+    background-color: rgb(183, 193, 248);
+}
 .corpo {
     text-align: center;
     background-color: rgb(183, 193, 248);
     color: #555086;
 } 
+
+.adocoes {
+    text-align: center;
+    color: #555086;
+    padding: 12px 12px 20px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+.adocoes img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border: 4px groove #555086;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px #555086;
+}
 
