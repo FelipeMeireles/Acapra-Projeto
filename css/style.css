@@ -1,13 +1,146 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    background-color: #D7D8DB; /* Cor de fundo da página principal */
+    /* Adicionar padding-bottom para não sobrepor o conteúdo com o footer fixo */
+    /* A altura exata dependerá do conteúdo do footer, ajuste conforme necessário */
+    padding-bottom: 400px; /* Exemplo de altura, o usuário precisará ajustar */
+}
 
- body{
-    background-color: #D7D8DB;
- }
+.contact-section{
+    background-color: #5D5480; /* Cor de fundo roxa */
+    width: 100%;
+    padding: 0; /* Padding será aplicado internamente ou removido se a curva cobrir tudo */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden; /* Para conter a forma curva */
+}
+
+.form-container {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    padding-top: 60px; /* Aumentar padding superior para compensar a curva */
+    color: #fff;
+    text-align: center;
+    max-width: 800px; /* Limita a largura do conteúdo do formulário */
+    margin: 0 auto; /* Centraliza o container do formulário */
+}
+
+.form-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group-half {
+    width: 48%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #E0E0E0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #B0B0B0;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #E6E6FA;
+}
+
+.form-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    color: #5D5480;
+}
+
+.social-icons {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #D8D8E3;
+}
+
+.form-footer {
+    margin-top: 30px;
+    padding-bottom: 20px; /* Adiciona um padding inferior dentro do footer fixo */
+}
+
+.form-footer p {
+    font-size: 0.8rem;
+    color: #C0C0C0;
+}
 
 /* Página Home */
 

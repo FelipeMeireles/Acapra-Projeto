@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ACAPRA BRUSQUE</title>
 </head>
 <body>
@@ -52,18 +52,41 @@ No local, haverá venda de bebidas e doces. O evento acontecerá das 16h às 20h
 </section>
 
     </main>
-        <footer>
-            <div>
-                <form class="contatos-form">
-                    <input type="text" placeholder="E-mail" required>
-                    <input type="text" placeholder="Nome" required>
-                    <input type="text" placeholder="Assunto">
-                    <textarea name="" id="textarea-ctt" placeholder="Sua mensagem" required></textarea>
-
-                    <input class="btn-enviar-contatos" type="submit" value="Enviar">
-                </form>
-                <p>&copy; 2025 Instituição ACAPRA. Todos os direitos autorais reservados.</p>
+        <div class="contact-section">
+        <div class="form-container">
+            <h2>Contatos</h2>
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group form-group-half">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-group form-group-half">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Digite sua mensagem aqui</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                <div class="form-group form-button-container">
+                    <button type="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a> <!-- Exemplo, pode ser outro ícone -->
             </div>
-        </footer>
+            <footer class="form-footer">
+                <p>&copy;2025 Instituição ACAPRA. Todos os direitos autorais reservados.</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
