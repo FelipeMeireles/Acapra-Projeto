@@ -1,58 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACAPRA</title>
     <link rel="stylesheet" href="/css/style.css">
-    <title>ACAPRA BRUSQUE</title>
 </head>
+
 <body>
     <header>
-        <div class="inicio">
-            <img href="/1index.html" src="/img/logo roxa.png" alt="logo" class="logo">
-            <ul>
-                <a href="2doações.html"><li>Doações</li></a>
-                <a href="3estatisticas.html"><li>Estatísticas</li></a>
-                <a href=""><li>Contato</li></a>
-            </ul>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/logo roxa.png" alt="ACAPRA Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/HTML/2doações.html">Doações</a></li>
+                    <li><a href="#">Quero Adotar</a></li>
+                    <li><a href="/HTML/3estatisticas.html">Estatísticas</a></li>
+                    <li><a href="/HTML/4historias.html">Histórias de Adoção</a></li>
+                    <li><a href="#" class="contact-button">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
-        <section class="banner">
-            <h2>Bem-vindo à Instituição ACAPRA</h2>
-            <p>Resgatar, recuperar e incentivar a adoção de animais em situação de abandono ou vítimas de maus-tratos</p>
+        <!-- Seção Notícias -->
+        <section id="noticias">
+            <div class="container">
+                <h2>Notícias</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="placeholder_news1.png" alt="Notícia 1 Imagem">
+                        <h3>UMA TONELADA!!</h3>
+                        <p>Resultado da Gincana do @colegiounifebe, foram 1700 quilos de ração distribuídos a ONGS da
+                            causa animal, e mil foram destinados a Acapra!!</p>
+                    </div>
+                    <div class="news-card">
+                        <img src="placeholder_news2.png" alt="Notícia 2 Imagem">
+                        <h3>Pastelada da Acapra</h3>
+                        <p>Entidade realiza ação na próxima semana em Brusque, a ação será na Sociedade Ipiranga,
+                            localizada na rua Ipiranga, número 144, no Souza Cruz.</p>
+                        <p>No local, haverá venda de bebidas e doces. O evento acontecerá das 16h às 20h. O pastel
+                            vendido no valor de R$ 7, estará disponível nos sabores de carne, palmito e bananinha.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="sobre">
-            <h2>Sobre nós</h2>
-            <p>A Associação Brusquense de Proteção aos Animais (ACAPRA) é uma entidade sem fins lucrativos voltada ao cuidado e defesa dos animais em Brusque, Santa Catarina.</p>
+        <!-- Seção Nossa História e Missão -->
+        <section id="historia-missao">
+            <div class="container">
+                <h2>Nossa história e Missão <span class="highlight">ACAPRA</span></h2>
+                <p>A Associação Brusquense de Proteção aos Animais (Acapra) é uma entidade sem fins lucrativos voltada
+                    ao cuidado e defesa dos animais em Brusque, Santa Catarina. Criada no ano 2000, sua principal missão
+                    é resgatar, recuperar e incentivar a adoção de animais em situação de abandono ou vítimas de
+                    maus-tratos. Além disso, a organização busca conscientizar a população sobre a importância da guarda
+                    responsável e do respeito aos bichos.</p>
+            </div>
         </section>
 
-        <section class="noticias">
-            <h2>Últimas notícias</h2>
+        <!-- Seção Maus-Tratos -->
+        <section id="maus-tratos">
+            <div class="container">
+                <div class="back">
+                    <img src="/img/page-home/frame-maus-tratos.png" alt="">
+                    <div class="maus-tratos-content">
+                        <div class="maus-tratos-column">
+                            <img src="placeholder_maustratos_lei.png" alt="Imagem O que diz a lei">
+                            <h3>O que diz a lei?</h3>
+                            <p>Estritamente proibido submeter os animais a ferimentos ou morte, mantê-los sem abrigo
+                                adequado, obrigá-los a trabalhos excessivos, transportá-los de forma inadequada,
+                                utilizá-los em rituais religiosos ou lutas, abatê-los para consumo e abandoná-los em
+                                vias públicas.</p>
+                        </div>
+                        <div class="maus-tratos-column">
+                            <img src="placeholder_maustratos_consequencias.png" alt="Imagem Consequências">
+                            <h3>Consequências</h3>
+                            <p>As penalidades para tais infrações incluem advertências por escrito e multas que variam
+                                de R$ 100,00 a R$ 3.000,00, dependendo da gravidade da infração.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <ul>
-                <li><strong>Pastelada da ACAPRA<strong></li>
-                    <p>Resultado da Gincana do @colegiounifebe, foram 1700 quilos de ração distribuídos a ONGS da causa animal, e mil foram destinadas a Acapra!!</p>
-                
-                    <li><strong>UMA TONELADA!!</strong></li>
-                    <p>Entidade realiza ação na próxima semana em Brusque, a ação será na Sociedade Ipiranga, localizada na rua Ipiranga, número 144, no Souza Cruz.
-No local, haverá venda de bebidas e doces. O evento acontecerá das 16h às 20h. O pastel, vendido no valor de R$ 7, estará disponível nos sabores de carne, palmito e bananinha. </p>
-            </ul>
+            <!-- Seção Como Denunciar -->
+            <section id="como-denunciar">
+                <div class="container">
+                    <h2>Como denunciar?</h2>
+                    <div class="denunciar-grid">
+                        <div class="denunciar-card">
+                            <h3>Ouvidoria do Município</h3>
+                            <p>As denúncias podem ser realizadas de forma anônima pelo site oficial da Prefeitura de
+                                Brusque
+                                ou pelo telefone 156.</p>
+                        </div>
+                        <div class="denunciar-card">
+                            <h3>Polícia Militar</h3>
+                            <p>Em situações de flagrante ou emergências, ligue para o número 190.</p>
+                        </div>
+                        <div class="denunciar-card">
+                            <h3>O Município</h3>
+                            <p>Diretoria de Bem-Estar Animal: Para denúncias e informações, entre em contato pelo
+                                telefone
+                                disponível e faça sua parte! <a href="#">Instagram</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-
-<section class="história">
-    <h1>NOSSA MISSÃO E HISTÓRIA</h1>
-    <H2>ACAPRA</H2>
-    <H4>A Associação Brusquense de Proteção aos Animais (Acapra) é uma entidade sem fins lucrativos voltada ao cuidado e defesa dos animais em Brusque, Santa Catarina. Criada no ano 2000, sua principal missão é resgatar, recuperar e incentivar a adoção de animais em situação de abandono ou vítimas de maus-tratos. Além disso, a organização busca conscientizar a população sobre a importância da guarda responsável e do respeito aos bichos.</H4>
-</section>
-
-<section class="maus-tratos">
-    
-</section>
-
     </main>
-        <div class="contact-section">
+
+    <!-- Seção Formulário de Contato -->
+    <div class="contact-section">
+        <div class="background-shape"></div>
         <div class="form-container">
             <h2>Contatos</h2>
             <form action="#" method="POST">
@@ -79,14 +142,19 @@ No local, haverá venda de bebidas e doces. O evento acontecerá das 16h às 20h
                 </div>
             </form>
             <div class="social-icons">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a> <!-- Exemplo, pode ser outro ícone -->
+                <a href="/img/redes-sociais/instagram-vetor.png" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="/img/redes-sociais/whatsapp-vetor.png" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="/img/redes-sociais/email-vetor.png" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            <footer class="form-footer">
+            <footer class="contato-footer">
                 <p>&copy;2025 Instituição ACAPRA. Todos os direitos autorais reservados.</p>
             </footer>
         </div>
     </div>
+    <script src="jquery.js"></script>
+    <script src="scroll_script.js"></script>
 </body>
+
 </html>
