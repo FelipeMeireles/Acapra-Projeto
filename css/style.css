@@ -9,7 +9,8 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo geral, pode ser ajustada */
+    background-color: #f4f4f4;
+    /* Cor de fundo geral, pode ser ajustada */
     color: #333;
 }
 
@@ -22,7 +23,8 @@ body {
 
 h2 {
     text-align: center;
-    color: #3A3D6D; /* Azul escuro para títulos de seção */
+    color: #3A3D6D;
+    /* Azul escuro para títulos de seção */
     margin-bottom: 30px;
     font-size: 2em;
 }
@@ -61,7 +63,8 @@ header .container {
 }
 
 .logo img {
-    height: 100px; /* Ajustar conforme o logo real */
+    height: 100px;
+    /* Ajustar conforme o logo real */
     margin-right: 10px;
 }
 
@@ -94,7 +97,8 @@ header nav ul li a:hover {
 }
 
 .contact-button {
-    background-color: #4A4E8C; /* Roxo/Azul do botão Contato */
+    background-color: #4A4E8C;
+    /* Roxo/Azul do botão Contato */
     color: #fff !important;
     padding: 10px 20px;
     border-radius: 5px;
@@ -110,12 +114,14 @@ header nav ul li a:hover {
 /*            SEÇÃO NOTÍCIAS            */
 /****************************************/
 #noticias {
-    background-color: #E9E8F5; /* Lilás bem claro de fundo da seção */
+    background-color: #E9E8F5;
+    /* Lilás bem claro de fundo da seção */
     padding: 40px 0;
 }
 
 #noticias h2 {
-    color: #4A4E8C; /* Roxo/Azul para o título */
+    color: #4A4E8C;
+    /* Roxo/Azul para o título */
 }
 
 .news-grid {
@@ -127,14 +133,15 @@ header nav ul li a:hover {
 .news-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 20px;
 }
 
 .news-card img {
     width: 100%;
-    height: 200px; /* Altura fixa para imagens de notícia */
+    height: 200px;
+    /* Altura fixa para imagens de notícia */
     object-fit: cover;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -167,7 +174,8 @@ header nav ul li a:hover {
 }
 
 #historia-missao .highlight {
-    color: #4A4E8C; /* Cor de destaque para ACAPRA */
+    color: #4A4E8C;
+    /* Cor de destaque para ACAPRA */
     font-weight: bold;
 }
 
@@ -183,30 +191,36 @@ header nav ul li a:hover {
 /*          SEÇÃO MAUS-TRATOS           */
 /****************************************/
 #maus-tratos {
-    background-image: url('/img/page-home/background-home.png'); /* Lilás mais escuro para o fundo da seção */
+    background-image: url('/img/page-home/background-home.png');
+    /* Lilás mais escuro para o fundo da seção */
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 50px 0;
     position: relative;
     overflow: hidden;
-    height: 165vh; /* Para conter os elementos diagonais se adicionados com pseudo-elementos */
+    height: 165vh;
+    /* Para conter os elementos diagonais se adicionados com pseudo-elementos */
 }
 
 /* Elementos de design diagonal (simplificado) */
 
 
 #maus-tratos .container {
-    position: relative; /* Para que o conteúdo fique acima do pseudo-elemento */
+    position: relative;
+    /* Para que o conteúdo fique acima do pseudo-elemento */
     z-index: 1;
 }
 
 #maus-tratos h2 {
-    color: #fff; /* Texto branco sobre a faixa escura */
+    color: #fff;
+    /* Texto branco sobre a faixa escura */
     padding: 20px;
-    display: inline-block; /* Para o background não ocupar a largura toda */
+    display: inline-block;
+    /* Para o background não ocupar a largura toda */
     border-radius: 5px;
     margin-bottom: 40px;
-    position: relative; /* Para garantir que fique sobre o ::before da seção */
+    position: relative;
+    /* Para garantir que fique sobre o ::before da seção */
     z-index: 2;
 }
 
@@ -221,19 +235,21 @@ header nav ul li a:hover {
     background-color: #fff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .maus-tratos-column img {
     width: 100%;
-    height: 180px; /* Altura fixa para imagens */
+    height: 180px;
+    /* Altura fixa para imagens */
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 15px;
 }
 
 .maus-tratos-column h3 {
-    color: #A05A5A; /* Cor do título dentro do card */
+    color: #A05A5A;
+    /* Cor do título dentro do card */
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.3em;
@@ -249,7 +265,8 @@ header nav ul li a:hover {
 /*        SEÇÃO COMO DENUNCIAR          */
 /****************************************/
 #como-denunciar {
-    background-color: #E9E8F5; /* Mesmo lilás claro da seção de notícias */
+    background-color: #E9E8F5;
+    /* Mesmo lilás claro da seção de notícias */
     padding: 50px 0;
 }
 
@@ -267,7 +284,7 @@ header nav ul li a:hover {
     background-color: #fff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     text-align: center;
 }
 
@@ -303,10 +320,14 @@ header nav ul li a:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Altura da curva, podemos ajustar */
-    background-color: #f0f2f5; /* Cor de fundo do body da página */
-    clip-path: ellipse(50% 70% at 50% 100%); /* Cria a elipse na base */
-    z-index: 1; /* Para ficar entre o fundo roxo e o conteúdo do formulário se necessário */
+    height: 60px;
+    /* Altura da curva, podemos ajustar */
+    background-color: #f0f2f5;
+    /* Cor de fundo do body da página */
+    clip-path: ellipse(50% 70% at 50% 100%);
+    /* Cria a elipse na base */
+    z-index: 1;
+    /* Para ficar entre o fundo roxo e o conteúdo do formulário se necessário */
 }
 
 .contact-section {
@@ -314,14 +335,17 @@ header nav ul li a:hover {
 }
 
 .contact-section-fixed-footer {
-    background-color: #5D5480; /* Cor de fundo roxa */
+    background-color: #5D5480;
+    /* Cor de fundo roxa */
     width: 100%;
-    padding: 0; /* Padding será aplicado internamente ou removido se a curva cobrir tudo */
+    padding: 0;
+    /* Padding será aplicado internamente ou removido se a curva cobrir tudo */
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    overflow: hidden; /* Para conter a forma curva */
+    overflow: hidden;
+    /* Para conter a forma curva */
 }
 
 .background-shape {
@@ -329,20 +353,26 @@ header nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150px; /* Altura da forma curva, pode precisar de ajuste */
-    background-color: #D8D8E3; /* Cor da forma curva no topo */
-    clip-path: ellipse(120% 60% at 50% 0%); /* Ajuste a elipse para cobrir a largura */
+    height: 150px;
+    /* Altura da forma curva, pode precisar de ajuste */
+    background-color: #D8D8E3;
+    /* Cor da forma curva no topo */
+    clip-path: ellipse(120% 60% at 50% 0%);
+    /* Ajuste a elipse para cobrir a largura */
     z-index: 1;
 }
 
 .form-container {
     position: relative;
     z-index: 2;
-    padding-top: 60px; /* Aumentar padding superior para compensar a curva */
+    padding-top: 60px;
+    /* Aumentar padding superior para compensar a curva */
     color: #fff;
     text-align: center;
-    max-width: 800px; /* Limita a largura do conteúdo do formulário */
-    margin: 0 auto; /* Centraliza o container do formulário */
+    max-width: 800px;
+    /* Limita a largura do conteúdo do formulário */
+    margin: 0 auto;
+    /* Centraliza o container do formulário */
 }
 
 .form-container h2 {
@@ -445,7 +475,8 @@ header nav ul li a:hover {
 
 .form-footer {
     margin-top: 30px;
-    padding-bottom: 20px; /* Adiciona um padding inferior dentro do footer fixo */
+    padding-bottom: 20px;
+    /* Adiciona um padding inferior dentro do footer fixo */
 }
 
 .form-footer p {
@@ -454,7 +485,7 @@ header nav ul li a:hover {
 }
 
 /****************************************/
-/*                DOAÇÕES               */
+/*            PÁGINA DOAÇÕES            */
 /****************************************/
 
 .doacoes {
@@ -522,7 +553,7 @@ header nav ul li a:hover {
     text-align: center;
     position: relative;
     left: 43.25%;
-    
+
     font-size: 1.3em;
 }
 
@@ -538,7 +569,7 @@ header nav ul li a:hover {
 }
 
 /****************************************/
-/*             ESTATÍSTICAS             */
+/*         PÁGINA ESTATÍSTICAS          */
 /****************************************/
 
 .estatisticas {
@@ -548,8 +579,10 @@ header nav ul li a:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
     background-color: white;
-    transform: scale(0.9); /* Diminui visualmente sem mudar o texto no CSS */
-    transform-origin: top center; /* Opcional: ponto de origem da escala */
+    transform: scale(0.9);
+    /* Diminui visualmente sem mudar o texto no CSS */
+    transform-origin: top center;
+    /* Opcional: ponto de origem da escala */
 }
 
 .historia {
@@ -561,7 +594,7 @@ header nav ul li a:hover {
     text-align: center;
     background-color: rgb(183, 193, 248);
     color: #555086;
-} 
+}
 
 .adocoes {
     text-align: center;
@@ -576,13 +609,296 @@ header nav ul li a:hover {
 .adocoes img {
     width: 250px;
     height: 250px;
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
     border: 4px groove #555086;
     border-radius: 3px;
     box-shadow: 0 4px 8px #555086;
 }
 
 
+/****************************************/
+/*        PÁGINA CAMPANHA ADOÇÕES       */
+/****************************************/
+.body-campanha {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    /* Cor de fundo da área externa ao page-container */
+    color: #333;
+    /* Removido: display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px; */
+}
+
+.page-container {
+    display: flex;
+    width: 100%;
+    /* Alterado de 95% para 100% */
+    /* Removido: max-width: 1400px; */
+    background-color: #E6E6FA;
+    /* Lilás bem claro de fundo da área principal */
+    /* Removido: border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); */
+    min-height: 100vh;
+    /* Alterado de 80vh para 100vh para ocupar a tela toda */
+}
+
+/* Sidebar de Filtro */
+.filter-sidebar {
+    width: 250px;
+    background-color: #E6E6FA;
+    /* Lilás um pouco mais escuro para a sidebar */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    /* Removido: border-top-left-radius: 8px; border-bottom-left-radius: 8px; (para full width) */
+    flex-shrink: 0;
+    /* Impede que a sidebar encolha */
+}
+
+.filter-button {
+    background-color: #8A2BE2;
+    /* Roxo para o botão de filtro */
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-button i {
+    margin-right: 8px;
+}
+
+.filter-button:hover {
+    background-color: #7B1FA2;
+}
+
+.filter-options-panel {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options-panel h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #4B0082;
+    /* Indigo/Roxo escuro */
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.filter-group select,
+.filter-group input[type="checkbox"]+label {
+    font-size: 0.9em;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-group div {
+    margin-bottom: 3px;
+}
+
+.apply-filters-button {
+    background-color: #6A0DAD;
+    /* Roxo mais escuro */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.apply-filters-button:hover {
+    background-color: #5A009D;
+}
+
+/* Área de Conteúdo Principal */
+.content-area {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E6E6FA;
+    /* Garantir que a cor de fundo se estenda */
+}
+
+/* Cabeçalho Principal */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #4B0082;
+    /* Indigo/Roxo escuro */
+}
+
+.header-title p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.adopted-link {
+    font-size: 0.9em;
+    color: #4B0082;
+    text-decoration: underline;
+}
+
+.adopted-link:hover {
+    color: #8A2BE2;
+}
+
+/* Grade de Animais */
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.animal-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    /* Para alinhar conteúdo interno */
+}
+
+.animal-card.highlighted {
+    border: 2px solid #8A2BE2;
+    /* Roxo para destaque */
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.animal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Estilos para card de adoção conjunta */
+.joint-adoption-card .joint-images {
+    display: flex;
+    justify-content: space-around;
+    /* Ou space-between */
+    align-items: center;
+    width: 100%;
+    /* Ocupa a largura do card */
+}
+
+.joint-adoption-card .joint-images img {
+    width: 48%;
+    /* Para duas imagens com um pequeno espaço entre elas */
+    height: 160px;
+    /* Ajustar altura conforme necessário */
+    object-fit: cover;
+    border-radius: 4px;
+    /* Opcional */
+}
+
+.animal-info {
+    padding: 10px;
+    flex-grow: 1;
+    /* Faz com que esta div ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Alinha o botão no final */
+}
+
+.animal-info h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.animal-info h3 i {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.fa-venus {
+    color: #FF69B4;
+}
+
+/* Rosa para fêmea */
+.fa-mars {
+    color: #1E90FF;
+}
+
+/* Azul para macho */
+
+.tag-adocao-conjunta {
+    display: inline-block;
+    background-color: #FF4500;
+    /* Laranja/Vermelho para tag */
+    color: white;
+    font-size: 0.7em;
+    padding: 3px 7px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    align-self: center;
+    /* Centraliza a tag */
+}
+
+.adopt-button {
+    background-color: #6A0DAD;
+    /* Roxo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 80%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    /* Empurra o botão para baixo no flex container */
+    align-self: center;
+    /* Centraliza o botão */
+}
+
+.adopt-button:hover {
+    background-color: #5A009D;
+}
 
 /****************************************/
 /*            RESPONSIVIDADE            */
@@ -595,16 +911,19 @@ header nav ul li a:hover {
 
     header nav ul {
         margin-top: 15px;
-        flex-wrap: wrap; /* Permite que os itens quebrem linha */
+        flex-wrap: wrap;
+        /* Permite que os itens quebrem linha */
         justify-content: center;
     }
 
     header nav ul li {
-        margin: 5px 10px; /* Ajuste de margem para mobile */
+        margin: 5px 10px;
+        /* Ajuste de margem para mobile */
     }
 
     .news-grid {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        grid-template-columns: 1fr;
+        /* Uma coluna em telas menores */
     }
 
     .maus-tratos-content {
@@ -612,12 +931,14 @@ header nav ul li a:hover {
     }
 
     #maus-tratos::before {
-        height: 100px; /* Ajustar faixa diagonal para mobile */
+        height: 100px;
+        /* Ajustar faixa diagonal para mobile */
         top: -30px;
     }
 
     #maus-tratos h2 {
-        font-size: 1.5em; /* Ajustar tamanho do título */
+        font-size: 1.5em;
+        /* Ajustar tamanho do título */
         padding: 15px;
     }
 
@@ -625,26 +946,32 @@ header nav ul li a:hover {
         grid-template-columns: 1fr;
     }
 
-    
+
     .form-container {
         padding: 20px;
         padding-top: 50px;
     }
+
     .form-container h2 {
         font-size: 2rem;
     }
+
     .form-row {
         flex-direction: column;
     }
+
     .form-group-half {
         width: 100%;
         margin-bottom: 25px;
     }
+
     .form-row .form-group-half:last-child {
         margin-bottom: 0;
     }
+
     .background-shape {
-        height: 120px; /* Altura da forma curva */
+        height: 120px;
+        /* Altura da forma curva */
         clip-path: ellipse(150% 60% at 50% 0%);
     }
 }
@@ -668,33 +995,42 @@ header nav ul li a:hover {
         font-size: 1.6em;
     }
 
-    .news-card h3, .maus-tratos-column h3, .denunciar-card h3 {
+    .news-card h3,
+    .maus-tratos-column h3,
+    .denunciar-card h3 {
         font-size: 1.1em;
     }
 
-    #historia-missao p, .news-card p, .maus-tratos-column p, .denunciar-card p {
+    #historia-missao p,
+    .news-card p,
+    .maus-tratos-column p,
+    .denunciar-card p {
         font-size: 0.9em;
     }
 
-    
+
     .background-shape {
-        height: 100px; /* Reduz altura da curva em telas muito pequenas */
+        height: 100px;
+        /* Reduz altura da curva em telas muito pequenas */
         clip-path: ellipse(200% 60% at 50% 0%);
     }
+
     .form-container h2 {
         font-size: 1.8rem;
     }
+
     .submit-button {
         padding: 10px 25px;
         font-size: 0.9rem;
     }
+
     .social-icons a {
         font-size: 1.5rem;
         margin: 0 10px;
     }
+
     body {
-        padding-bottom: 450px; /* Ajustar padding para telas menores se a altura do footer mudar muito */
+        padding-bottom: 450px;
+        /* Ajustar padding para telas menores se a altura do footer mudar muito */
     }
 }
-
-

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha de Adoção - ACAPRA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Adicionar link para Font Awesome se for usar para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <aside class="filter-sidebar">
+            <button class="filter-button"><i class="fas fa-filter"></i> Filtrar</button>
+            <!-- O conteúdo do filtro será adicionado aqui depois -->
+            <div class="filter-options-panel" style="display: none;"> <!-- Inicialmente oculto -->
+                <h3>Filtros</h3>
+                <div class="filter-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione</option>
+                        <!-- Adicionar opções de estado aqui -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">
+                        <option value="">Selecione</option>
+                        <!-- Adicionar opções de cidade aqui -->
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Espécie:</label>
+                    <div><input type="checkbox" id="especie_cachorro" name="especie" value="cachorro"> <label for="especie_cachorro">Cachorro</label></div>
+                    <div><input type="checkbox" id="especie_gato" name="especie" value="gato"> <label for="especie_gato">Gato</label></div>
+                </div>
+                <div class="filter-group">
+                    <label>Porte:</label>
+                    <div><input type="checkbox" id="porte_pequeno" name="porte" value="pequeno"> <label for="porte_pequeno">Pequeno</label></div>
+                    <div><input type="checkbox" id="porte_medio" name="porte" value="medio"> <label for="porte_medio">Médio</label></div>
+                    <div><input type="checkbox" id="porte_grande" name="porte" value="grande"> <label for="porte_grande">Grande</label></div>
+                </div>
+                <div class="filter-group">
+                    <label>Sexo:</label>
+                    <div><input type="checkbox" id="sexo_femea" name="sexo" value="femea"> <label for="sexo_femea">Fêmea</label></div>
+                    <div><input type="checkbox" id="sexo_macho" name="sexo" value="macho"> <label for="sexo_macho">Macho</label></div>
+                </div>
+                <button class="apply-filters-button">Aplicar Filtros</button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <header class="main-header">
+                <div class="header-title">
+                    <h1>Campanha de Adoção</h1>
+                    <p>Escolha seu Amigo</p>
+                </div>
+                <a href="#" class="adopted-link">Sobre animais já adotados</a>
+            </header>
+
+            <section class="animal-grid">
+                <!-- Card de Animal Exemplo 1 -->
+                <div class="animal-card">
+                    <img src="placeholder_animal1.jpg" alt="Branca">
+                    <div class="animal-info">
+                        <h3>Branca <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Adoção Conjunta: Glória e Cléo -->
+                <div class="animal-card joint-adoption-card">
+                    <div class="joint-images">
+                        <img src="/img/page-home/maus-tratos1.png" alt="Glória">
+                        <img src="placeholder_animal3.jpg" alt="Cléo">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Glória <i class="fas fa-venus"></i> & Cléo <i class="fas fa-venus"></i></h3>
+                        <span class="tag-adocao-conjunta">adoção conjunta</span>
+                        <button class="adopt-button">Quero Adotar (Duplinha)</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 4 (Maia) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal4.jpg" alt="Maia">
+                    <div class="animal-info">
+                        <h3>Maia <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 5 (Mavie) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal5.jpg" alt="Mavie">
+                    <div class="animal-info">
+                        <h3>Mavie <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 6 (Luma) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal6.jpg" alt="Luma">
+                    <div class="animal-info">
+                        <h3>Luma <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 7 (Luzia - Destacado) -->
+                <div class="animal-card highlighted">
+                    <img src="placeholder_animal7.jpg" alt="Luzia">
+                    <div class="animal-info">
+                        <h3>Luzia <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 8 (Difusor) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal8.jpg" alt="Difusor">
+                    <div class="animal-info">
+                        <h3>Difusor <i class="fas fa-mars"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 9 (Mimi) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal9.jpg" alt="Mimi">
+                    <div class="animal-info">
+                        <h3>Mimi <i class="fas fa-venus"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+                <!-- Card de Animal Exemplo 10 (Bartô) -->
+                <div class="animal-card">
+                    <img src="placeholder_animal10.jpg" alt="Bartô">
+                    <div class="animal-info">
+                        <h3>Bartô <i class="fas fa-mars"></i></h3>
+                        <button class="adopt-button">Quero Adotar</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Script simples para alternar a visibilidade do painel de filtros
+        document.querySelector('.filter-button').addEventListener('click', function() {
+            const filterPanel = document.querySelector('.filter-options-panel');
+            if (filterPanel.style.display === 'none' || filterPanel.style.display === '') {
+                filterPanel.style.display = 'block';
+            } else {
+                filterPanel.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
