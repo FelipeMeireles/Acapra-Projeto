@@ -5,38 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Doações</title>
+    <title>Doações e Ajuda</title>
+    <link rel="shortcut icon" href="/img/logo roxa.png" type="image/x-icon">
+    <!-- Adicionando Font Awesome para o ícone de telefone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="/img/logo roxa.png" alt="ACAPRA Logo">
+                <a href="/HTML/1index.html"><img src="/img/logo roxa.png" alt="ACAPRA Logo"></a>
             </div>
             <nav>
                 <ul>
                     <li><a href="/HTML/2doações.html">Doações</a></li>
-                    <li><a href="#">Quero Adotar</a></li>
+                    <li><a href="/HTML/5campanha_adocao.html">Quero Adotar</a></li>
                     <li><a href="/HTML/3estatisticas.html">Estatísticas</a></li>
                     <li><a href="/HTML/4historias.html">Histórias de Adoção</a></li>
-                    <li><a href="#" class="contact-button">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <h1 class="doacoes-titulo">Doações</h1>
-        <p class="doacoes"><strong>Aceitamos doações, doar via pix: 03.772.251.0001-82</strong> Todas doações de
-            dinheiro são convertidas para itens para nossos animais, em nosso instagram tem a prestação de contas para
-            confirmar isso.</p>
-        <p class="doacoes2">Também podem entrar em contato no WhatsApp para nos perguntar de quais itens precisamos,
-            exemplo: rações, areia pra gato, remédios e etc.</p>
-        <p class="doacoes3">Você pode se oferecer para ser um lar temporário de novos animais entre em contato via
-            WhatsApp</p>
-        <p class="doacoes4">Se você não poder doar valores monetários venha ser um voluntário irá nos ajudar muito.</p>
+        <div class="content-container">
+            
+            <h1>Doações</h1>
+            <div class="donation-card primary-card">
+                <h2>Aceitamos doações, doar via pix: <strong>03.772.251.0001-82</strong></h2>
+                <p>Todas doações de dinheiro são convertidas para itens para nossos animais, em nosso instagram tem a
+                    prestação de contas para confirmar isso.</p>
+            </div>
+
+            <div class="donation-card secondary-card">
+                <p>Também podem entrar em contato no WhatsApp para nos perguntar de quais itens precisamos, exemplo:
+                    rações, areia pra gato, remédios e etc.</p>
+            </div>
+
+            <div class="donation-card tertiary-card">
+                <p>Você pode se oferecer para ser um lar temporário de novos animais entre em contato via WhatsApp</p>
+            </div>
+
+            <div class="donation-card volunteer-card">
+                <p>Se você não poder doar valores monetários venha ser um voluntário irá nos ajudar muito.</p>
+            </div>
+
+            <div class="button-container">
+                <a class="volunteer-button" href="mailto: acaprabrusque@gmail.com">Seja um voluntário</a>
+            </div>
+        </div>
     </main>
-    <button class="doacoes-botao">Seja um voluntário</button>
+    <footer>Desenvolvido por Kauan e Luiz, Estilizado por Felipe</footer>
 </body>
 
 </html>

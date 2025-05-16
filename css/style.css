@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 /****************************************/
 /*            ESTILOS GERAIS            */
 /****************************************/
@@ -10,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    /* Cor de fundo geral, pode ser ajustada */
     color: #333;
 }
 
@@ -18,7 +13,13 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+h1 {
+    color: #555086;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -32,12 +33,6 @@ h2 {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 /****************************************/
@@ -366,6 +361,7 @@ header nav ul li a:hover {
     position: relative;
     z-index: 2;
     padding-top: 60px;
+    padding-bottom: 10px;
     /* Aumentar padding superior para compensar a curva */
     color: #fff;
     text-align: center;
@@ -458,114 +454,101 @@ header nav ul li a:hover {
 }
 
 .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: auto; /* Removida a altura fixa de 10px */
+}
+
+.social-icons img {
+    width: 30px; /* Tamanho fixo em vez de porcentagem */
+    height: 30px; /* Mantém proporção quadrada */
+    margin: 0 15px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
+    display: inline-block; /* Melhor para links com imagens */
     color: #fff;
-    font-size: 1.8rem;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #D8D8E3;
-}
-
-.form-footer {
-    margin-top: 30px;
-    padding-bottom: 20px;
-    /* Adiciona um padding inferior dentro do footer fixo */
-}
-
-.form-footer p {
-    font-size: 0.8rem;
-    color: #C0C0C0;
+    opacity: 0.8; /* Efeito de hover mais suave */
 }
 
 /****************************************/
 /*            PÁGINA DOAÇÕES            */
 /****************************************/
 
-.doacoes {
-    background-color: white;
-    color: #555086;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    right: 15%;
-    left: 15%;
-    font-size: 1.3em;
+.content-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.doacoes2 {
-    background-color: white;
-    color: #555086;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
+.donation-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
-    position: absolute;
-    top: 55%;
-    right: 15%;
-    left: 15%;
-    font-size: 1.3em;
+    color: #555086; /* Cor roxa como no Figma */
+    line-height: 1.5;
 }
 
-.doacoes3 {
-    background-color: rgb(221, 221, 221);
-    color: #555086;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: absolute;
-    top: 70%;
-    right: 15%;
-    left: 15%;
-    font-size: 1.3em;
+.primary-card {
+    background-color: #FFFFFF;
 }
 
-.doacoes4 {
-    background-color: white;
-    color: rgb(221, 221, 221);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    right: 15%;
-    left: 15%;
-    font-size: 1.3em;
+.primary-card h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
-.doacoes-botao {
-    background-color: #555086;
-    color: rgb(221, 221, 221);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: relative;
-    left: 43.25%;
-
-    font-size: 1.3em;
+.primary-card strong {
+    font-weight: bold;
 }
 
-.doacoes-titulo {
-    color: #555086;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    right: 40%;
-    left: 40%;
-    font-size: 4em;
+.secondary-card {
+    background-color: #FFFFFF;
+}
+
+.tertiary-card {
+    background-color: #F5F5F5; /* Cinza mais claro para o terceiro card */
+}
+
+.volunteer-card {
+    background-color: #555086; /* Cor roxa como no Figma */
+    color: #FFFFFF; /* Texto branco */
+    font-style: italic;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.volunteer-button {
+    background-color: #555086; /* Cor roxa como no Figma */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.volunteer-button:hover {
+    background-color: #4a4575;
 }
 
 /****************************************/
@@ -573,16 +556,25 @@ header nav ul li a:hover {
 /****************************************/
 
 .estatisticas {
-    text-align: center;
+    flex-direction: column;
     color: #555086;
     padding: 12px 12px 20px 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
     background-color: white;
-    transform: scale(0.9);
-    /* Diminui visualmente sem mudar o texto no CSS */
-    transform-origin: top center;
-    /* Opcional: ponto de origem da escala */
+    transform: scale(0.9); /* Diminui visualmente sem mudar o texto no CSS */
+    transform-origin: top center; /* Opcional: ponto de origem da escala */
+    margin-bottom: 25px;
+}
+
+.estatisticas img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border: 4px groove #555086;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px #555086;
+    margin-bottom: 25px; 
 }
 
 .historia {
@@ -603,19 +595,60 @@ header nav ul li a:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
     background-color: white;
+    margin-bottom: 40px;
+}
+
+.adocoes2 {
+    text-align: center;
+    color: #555086;
+    padding: 12px 12px 20px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: white; 
+    margin-bottom: 40px; 
 }
 
 
 .adocoes img {
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    /* Garante que a imagem preencha sem distorcer */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
     border: 4px groove #555086;
     border-radius: 3px;
     box-shadow: 0 4px 8px #555086;
 }
 
+.adocoes2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border: 4px groove #555086;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px #555086;
+}
+
+.adotados {
+    color: rgb(0, 0, 156);
+    font-size: 1.5em;
+}
+.rua {
+    color: rgb(11, 142, 248);
+    font-size: 1.5em;
+}
+.lar {
+    color: #7630c7;
+    font-size: 1.5em;
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+}
+
+.h1-adocoes {
+    display: flex;
+    justify-content: center;
+}
 
 /****************************************/
 /*        PÁGINA CAMPANHA ADOÇÕES       */
@@ -739,7 +772,6 @@ header nav ul li a:hover {
 /* Área de Conteúdo Principal */
 .content-area {
     flex-grow: 1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     background-color: #E6E6FA;
@@ -783,40 +815,98 @@ header nav ul li a:hover {
 .animal-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-top: 20px;
+    padding-right: 15px;
     gap: 20px;
     flex-grow: 1;
 }
 
 .animal-card {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     text-align: center;
-    padding-bottom: 15px;
-    border: 1px solid #ddd;
+    width: 200px;
+    margin: 10px;
+    /* Aumentar a altura para acomodar nome + botão */
+    height: 320px; /* Aumentado de 290px para 320px */
     display: flex;
     flex-direction: column;
-    /* Para alinhar conteúdo interno */
 }
 
-.animal-card.highlighted {
-    border: 2px solid #8A2BE2;
-    /* Roxo para destaque */
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+.image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .animal-card img {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.animal-info {
+    padding: 15px 10px; /* Aumentado o padding superior */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animal-info h3 {
+    margin: 0 0 30px 0; /* Aumentado a margem inferior */
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    font-family: Arial, sans-serif;
+    /* Garantir que o nome seja sempre visível */
+    position: relative;
+    z-index: 2;
+}
+
+.adopt-button {
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    width: 85%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    /* Posicionamento na parte inferior do card */
+    margin-top: auto; /* Empurra o botão para baixo */
+    margin-bottom: 15px; /* Espaço na parte inferior */
+}
+
+.adopt-button:hover {
+    background-color: #5A009D; /* Um pouco mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.adoption-tag {
+    background-color: #FF6B35;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 /* Estilos para card de adoção conjunta */
 .joint-adoption-card .joint-images {
     display: flex;
     justify-content: space-around;
-    /* Ou space-between */
     align-items: center;
     width: 100%;
     /* Ocupa a largura do card */
@@ -826,7 +916,6 @@ header nav ul li a:hover {
     width: 48%;
     /* Para duas imagens com um pequeno espaço entre elas */
     height: 160px;
-    /* Ajustar altura conforme necessário */
     object-fit: cover;
     border-radius: 4px;
     /* Opcional */
@@ -898,6 +987,12 @@ header nav ul li a:hover {
 
 .adopt-button:hover {
     background-color: #5A009D;
+}
+
+.dev {
+    text-align: center;
+    background-color: #E6E6FA;
+    color: #555086;
 }
 
 /****************************************/
