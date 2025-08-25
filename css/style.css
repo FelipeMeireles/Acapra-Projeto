@@ -310,37 +310,8 @@ header nav ul li a:hover {
 /*                RODAPÉ                */
 /****************************************/
 
-.bottom-curve-shape {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    /* Altura da curva, podemos ajustar */
-    background-color: #f0f2f5;
-    /* Cor de fundo do body da página */
-    clip-path: ellipse(50% 70% at 50% 100%);
-    /* Cria a elipse na base */
-    z-index: 1;
-    /* Para ficar entre o fundo roxo e o conteúdo do formulário se necessário */
-}
-
 .contact-section {
     background-color: #5D5480;
-}
-
-.contact-section-fixed-footer {
-    background-color: #5D5480;
-    /* Cor de fundo roxa */
-    width: 100%;
-    padding: 0;
-    /* Padding será aplicado internamente ou removido se a curva cobrir tudo */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    overflow: hidden;
-    /* Para conter a forma curva */
 }
 
 .background-shape {
@@ -577,11 +548,6 @@ header nav ul li a:hover {
     margin-bottom: 25px; 
 }
 
-.historia {
-    color: #555086;
-    background-color: rgb(183, 193, 248);
-}
-
 .corpo {
     text-align: center;
     background-color: rgb(183, 193, 248);
@@ -645,22 +611,9 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-.h1-adocoes {
-    display: flex;
-    justify-content: center;
-}
-
 /****************************************/
 /*        PÁGINA CAMPANHA ADOÇÕES       */
 /****************************************/
-.body-campanha {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    background-color: #f0f2f5;
-    /* Cor de fundo da área externa ao page-container */
-    color: #333;
-    /* Removido: display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px; */
-}
 
 .page-container {
     display: flex;
@@ -779,38 +732,7 @@ header nav ul li a:hover {
 }
 
 /* Cabeçalho Principal */
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #D3D3D3;
-}
-
-.header-title h1 {
-    margin: 0;
-    font-size: 1.8em;
-    color: #4B0082;
-    /* Indigo/Roxo escuro */
-}
-
-.header-title p {
-    margin: 0;
-    font-size: 1em;
-    color: #666;
-}
-
-.adopted-link {
-    font-size: 0.9em;
-    color: #4B0082;
-    text-decoration: underline;
-}
-
-.adopted-link:hover {
-    color: #8A2BE2;
-}
-
+/* ------------------- */
 /* Grade de Animais */
 .animal-grid {
     display: grid;
@@ -851,75 +773,7 @@ header nav ul li a:hover {
     display: block;
 }
 
-.animal-info {
-    padding: 15px 10px; /* Aumentado o padding superior */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.animal-info h3 {
-    margin: 0 0 30px 0; /* Aumentado a margem inferior */
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #333;
-    font-family: Arial, sans-serif;
-    /* Garantir que o nome seja sempre visível */
-    position: relative;
-    z-index: 2;
-}
-
-.adopt-button {
-    background-color: #6A0DAD;
-    color: white;
-    border: none;
-    padding: 8px 0;
-    width: 85%;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: bold;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    /* Posicionamento na parte inferior do card */
-    margin-top: auto; /* Empurra o botão para baixo */
-    margin-bottom: 15px; /* Espaço na parte inferior */
-}
-
-.adopt-button:hover {
-    background-color: #5A009D; /* Um pouco mais escuro no hover */
-    transform: translateY(-2px); /* Efeito de elevação */
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-}
-
-.adoption-tag {
-    background-color: #FF6B35;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
 /* Estilos para card de adoção conjunta */
-.joint-adoption-card .joint-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    /* Ocupa a largura do card */
-}
-
-.joint-adoption-card .joint-images img {
-    width: 48%;
-    /* Para duas imagens com um pequeno espaço entre elas */
-    height: 160px;
-    object-fit: cover;
-    border-radius: 4px;
-    /* Opcional */
-}
 
 .animal-info {
     padding: 10px;
@@ -954,19 +808,6 @@ header nav ul li a:hover {
 
 /* Azul para macho */
 
-.tag-adocao-conjunta {
-    display: inline-block;
-    background-color: #FF4500;
-    /* Laranja/Vermelho para tag */
-    color: white;
-    font-size: 0.7em;
-    padding: 3px 7px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    align-self: center;
-    /* Centraliza a tag */
-}
-
 .adopt-button {
     background-color: #6A0DAD;
     /* Roxo */
@@ -986,7 +827,19 @@ header nav ul li a:hover {
 }
 
 .adopt-button:hover {
-    background-color: #5A009D;
+    background-color: #5A009D; /* Um pouco mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.adoption-tag {
+    background-color: #FF6B35;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .dev {
