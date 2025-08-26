@@ -879,14 +879,73 @@ header nav ul li a:hover {
     display: block;
 }
 
-.adocaoconjunta {
+/* SISTEMA PADRONIZADO DE CARDS DE ADOÇÃO */
+.pet-adoption-card {
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Container de imagens - funciona para 1 ou 2 fotos */
+.pet-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* Para animais com apenas 1 foto */
+.pet-images-container.single-photo {
+    justify-content: center;
+}
+
+/* Para adoções conjuntas com 2 fotos */
+.pet-images-container.double-photo {
+    justify-content: flex-start;
+}
+
+.pet-image {
+    width: 376px;
+    height: 375px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Área de informações do lado direito */
+.pet-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.pet-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+/* Tags especiais - adaptável para diferentes tipos */
+.pet-tag {
     display: inline-block;
-    background-color: #555086;
     color: white;
     padding: 6px 12px;
-    border-radius: 20px;
+    border-radius: 12px;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -894,9 +953,46 @@ header nav ul li a:hover {
     margin: 0 0 15px 0;
 }
 
-.adocaoconjunta::before {
-    content: "🐶 ";
-    font-size: 16px;
+/* Tipos de tags com cores diferentes */
+.pet-tag.conjunto {
+    background-color: #555006;
+}
+
+.pet-tag.urgente {
+    background-color: #d32f2f;
+}
+
+.pet-tag.especial {
+    background-color: #1976d2;
+}
+
+.pet-tag.senior {
+    background-color: #7b1fa2;
+}
+
+.pet-description {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+/* Botão padronizado */
+.quero-adotar-btn {
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.quero-adotar-btn:hover {
+    background-color: #5a4a7a;
 }
 
 /****************************************/
