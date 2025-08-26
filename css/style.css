@@ -429,23 +429,29 @@ header nav ul li a:hover {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    height: auto; /* Removida a altura fixa de 10px */
+    height: auto;
+    /* Removida a altura fixa de 10px */
 }
 
 .social-icons img {
-    width: 30px; /* Tamanho fixo em vez de porcentagem */
-    height: 30px; /* Mantém proporção quadrada */
-    margin: 0 15px; /* Espaçamento entre os ícones */
+    width: 30px;
+    /* Tamanho fixo em vez de porcentagem */
+    height: 30px;
+    /* Mantém proporção quadrada */
+    margin: 0 15px;
+    /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
-    display: inline-block; /* Melhor para links com imagens */
+    display: inline-block;
+    /* Melhor para links com imagens */
     color: #fff;
     transition: opacity 0.3s ease;
 }
 
 .social-icons a:hover {
-    opacity: 0.8; /* Efeito de hover mais suave */
+    opacity: 0.8;
+    /* Efeito de hover mais suave */
 }
 
 /****************************************/
@@ -467,7 +473,8 @@ header nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
-    color: #555086; /* Cor roxa como no Figma */
+    color: #555086;
+    /* Cor roxa como no Figma */
     line-height: 1.5;
 }
 
@@ -490,12 +497,15 @@ header nav ul li a:hover {
 }
 
 .tertiary-card {
-    background-color: #F5F5F5; /* Cinza mais claro para o terceiro card */
+    background-color: #F5F5F5;
+    /* Cinza mais claro para o terceiro card */
 }
 
 .volunteer-card {
-    background-color: #555086; /* Cor roxa como no Figma */
-    color: #FFFFFF; /* Texto branco */
+    background-color: #555086;
+    /* Cor roxa como no Figma */
+    color: #FFFFFF;
+    /* Texto branco */
     font-style: italic;
 }
 
@@ -506,7 +516,8 @@ header nav ul li a:hover {
 }
 
 .volunteer-button {
-    background-color: #555086; /* Cor roxa como no Figma */
+    background-color: #555086;
+    /* Cor roxa como no Figma */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -532,19 +543,23 @@ header nav ul li a:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
     background-color: white;
-    transform: scale(0.9); /* Diminui visualmente sem mudar o texto no CSS */
-    transform-origin: top center; /* Opcional: ponto de origem da escala */
+    transform: scale(0.9);
+    /* Diminui visualmente sem mudar o texto no CSS */
+    transform-origin: top center;
+    /* Opcional: ponto de origem da escala */
     margin-bottom: 25px;
+    font-size: 1.2em;
 }
 
 .estatisticas img {
     width: 400px;
     height: 400px;
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
     border: 4px groove #555086;
     border-radius: 3px;
     box-shadow: 0 4px 8px #555086;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
 .corpo {
@@ -567,15 +582,16 @@ header nav ul li a:hover {
     padding: 12px 12px 20px 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 3px;
-    background-color: white; 
-    margin-bottom: 40px; 
+    background-color: white;
+    margin-bottom: 40px;
 }
 
 
 .adocoes img {
     width: 250px;
     height: 250px;
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
     border: 4px groove #555086;
     border-radius: 3px;
     box-shadow: 0 4px 8px #555086;
@@ -584,7 +600,8 @@ header nav ul li a:hover {
 .adocoes2 img {
     width: 250px;
     height: 250px;
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
     border: 4px groove #555086;
     border-radius: 3px;
     box-shadow: 0 4px 8px #555086;
@@ -594,10 +611,12 @@ header nav ul li a:hover {
     color: rgb(0, 0, 156);
     font-size: 1.5em;
 }
+
 .rua {
     color: rgb(11, 142, 248);
     font-size: 1.5em;
 }
+
 .lar {
     color: #7630c7;
     font-size: 1.5em;
@@ -749,7 +768,8 @@ header nav ul li a:hover {
     width: 200px;
     margin: 10px;
     /* Aumentar a altura para acomodar nome + botão */
-    height: 320px; /* Aumentado de 290px para 320px */
+    height: 320px;
+    /* Aumentado de 290px para 320px */
     display: flex;
     flex-direction: column;
 }
@@ -824,8 +844,10 @@ header nav ul li a:hover {
 }
 
 .adopt-button:hover {
-    background-color: #5A009D; /* Um pouco mais escuro no hover */
-    transform: translateY(-2px); /* Efeito de elevação */
+    background-color: #5A009D;
+    /* Um pouco mais escuro no hover */
+    transform: translateY(-2px);
+    /* Efeito de elevação */
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -843,6 +865,18 @@ header nav ul li a:hover {
     text-align: center;
     background-color: #E6E6FA;
     color: #555086;
+}
+
+/****************************************/
+/*        PÁGINA ANIMAL INDIVIDUAL       */
+
+/*******************Difusor*********************/
+
+.difusor {
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /****************************************/
