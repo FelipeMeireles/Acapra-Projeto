@@ -16,7 +16,6 @@ $(document).ready(function(){
         scrollTop: footerElement.offset().top
       }, 800); // 800 é a duração da animação em milissegundos (0.8 segundos)
     } else {
-      // Log de erro caso o elemento não seja encontrado
       console.error("Elemento com classe '.contact-section' (ou '.contato-footer') não foi encontrado na página.");
     }
   });
