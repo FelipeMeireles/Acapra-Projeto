@@ -879,6 +879,26 @@ header nav ul li a:hover {
     display: block;
 }
 
+.adocaoconjunta {
+    display: inline-block;
+    background-color: #555086;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;
+}
+
+.adocaoconjunta::before {
+    content: "🐶 ";
+    font-size: 16px;
+}
+
 /****************************************/
 /*            RESPONSIVIDADE            */
 /****************************************/
