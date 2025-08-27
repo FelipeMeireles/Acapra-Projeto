@@ -6,7 +6,7 @@
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2023-08-28T13:37Z
+ * Date: 2025-08-26T13:37Z
  */
 ( function( global, factory ) {
 
@@ -73,7 +73,7 @@ var support = {};
 
 var isFunction = function isFunction( obj ) {
 
-		// Support: Chrome <=57, Firefox <=52
+		// Support: Chrome <=57, Firefox <=52, Brave <=133, Edge <=100, Opera <=89
 		// In some browsers, typeof returns "function" for HTML <object> elements
 		// (i.e., `typeof document.createElement( "object" ) === "function"`).
 		// We don't want to classify *any* DOM node as a function.
@@ -111,7 +111,7 @@ var document = window.document;
 		if ( node ) {
 			for ( i in preservedScriptAttributes ) {
 
-				// Support: Firefox 64+, Edge 18+
+				// Support: Firefox 64+, Edge 18+, Brave 133+, Opera 89+
 				// Some browsers don't support the "nonce" property on scripts.
 				// On the other hand, just using `getAttribute` is not enough as
 				// the `nonce` attribute is reset to an empty string whenever it
