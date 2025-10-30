@@ -186,7 +186,7 @@ header nav ul li a:hover {
 /*          SEÇÃO MAUS-TRATOS           */
 /****************************************/
 #maus-tratos {
-    background-image: url('/img/page-home/background-home.png');
+    background-image: url('background-home.png');
     /* Lilás mais escuro para o fundo da seção */
     background-repeat: no-repeat;
     background-size: 100%;
@@ -871,13 +871,6 @@ header nav ul li a:hover {
 /*        PÁGINA ANIMAL INDIVIDUAL       */
 
 /*******************Difusor*********************/
-
-.difusor {
-    text-align: center;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
 
 /* SISTEMA PADRONIZADO DE CARDS DE ADOÇÃO */
 .pet-adoption-card {
